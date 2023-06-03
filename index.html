@@ -15,8 +15,7 @@
 		  try {
 			// Request the Bluetooth device through browser
 			const device = await navigator.bluetooth.requestDevice({
-			  optionalServices: ["battery_service", "device_information"],
-			  acceptAllDevices: true,
+			  acceptAllDevices: true
 			});
 			// Connect to the GATT server
 			// We also get the name of the Bluetooth device here
