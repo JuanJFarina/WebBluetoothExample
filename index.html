@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-	  <h1>Trying: </h1>
+	  <h1>Trying: getting battery percentage</h1>
     <button id="getDetails">Get device details</button>
     <div id="details"></div>
     <script>
@@ -25,6 +25,7 @@
 			}).then(value => {
 			  console.log(`Battery percentage is ${value.getUint8(0)}`);
 			}).catch(error => { console.error(error); });
+		});
 	</script>
   </body>
 </html>
